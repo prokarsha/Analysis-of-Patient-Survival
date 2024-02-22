@@ -1,0 +1,46 @@
+Report: Analysis of Patient Survival Dataset
+
+Dataset Description:
+The dataset used in this analysis comprises information about patients, including their demographics, medical characteristics, smoking habits, and genetic mutation status. The dataset was sourced from Kaggle, a platform known for hosting datasets and competitions related to data science and machine learning. The dataset contains the following columns:
+
+    Patient ID: Unique identifier for each patient.
+    Survival time (days): The number of days the patient survived after diagnosis.
+    Event: A binary variable indicating whether the patient experienced the event (death) or not (alive).
+    Tumor size (cm): The size of the tumor in centimeters.
+    Grade: The grade of the tumor.
+    Stage (TNM 8th edition): The stage of the tumor according to the TNM classification system.
+    Age: The age of the patient at diagnosis.
+    Sex: The gender of the patient.
+    Cigarette: The smoking status of the patient (current, former, or never).
+    Pack per year: The number of cigarette packs smoked per year.
+    Type.Adjuvant: The type of adjuvant treatment received by the patient.
+    Batch: Batch information.
+    EGFR: EGFR mutation status.
+    KRAS: KRAS mutation status.
+
+Analysis Methods Applied:
+
+    Descriptive Statistics:
+        Descriptive statistics were computed to summarize the main characteristics of the dataset, including measures such as mean, median, standard deviation, minimum, and maximum values. This analysis provides insights into the central tendency and variability of numerical variables in the dataset.
+
+    Correlation Matrix:
+        A correlation matrix was generated to explore the relationships between numerical variables in the dataset. Correlation coefficients quantify the strength and direction of linear relationships between variables. This analysis helps identify potential associations or dependencies between variables, aiding further investigation.
+
+    Histogram & Boxplot with Smoking Status:
+        Histograms and boxplots were created to visualize the distribution of survival time and tumor size with respect to smoking status. These visualizations help understand the impact of smoking habits on patient outcomes and tumor characteristics.
+
+    T-Test:
+        A t-test was conducted to compare the mean survival time between patients who were current smokers and those who had never smoked. The t-test helps determine whether there is a statistically significant difference in survival time between the two groups based on their smoking status.
+
+    Machine Learning (ML) Algorithm:
+        A machine learning approach was employed to predict patient survival outcomes using a Random Forest classifier. Accuracy was chosen as the evaluation metric to assess the performance of the classifier. GridSearchCV was utilized for hyperparameter tuning to optimize the Random Forest model's performance.
+
+Justification for Analysis Methods:
+
+    Descriptive statistics offer a comprehensive overview of the dataset's main characteristics, aiding in initial exploration and understanding.
+    The correlation matrix helps identify potential relationships between variables, guiding further investigation and feature selection for predictive modeling.
+    Visualizations such as histograms and boxplots provide intuitive insights into the distribution and variability of variables, particularly in relation to smoking status, which could be clinically relevant.
+    The t-test helps assess the impact of smoking status on patient survival, a critical factor in oncology research.
+    Machine learning techniques allow for predictive modeling, offering the potential to identify key predictors of patient outcomes and contribute to personalized medicine approaches.
+
+In summary, the combination of descriptive statistics, correlation analysis, visualization techniques, hypothesis testing, and machine learning algorithms provides a comprehensive framework for analyzing patient survival data, enabling both descriptive insights and predictive modeling capabilities. These analyses contribute to a better understanding of the factors influencing patient outcomes and can inform clinical decision-making and research efforts in oncology and related fields.
